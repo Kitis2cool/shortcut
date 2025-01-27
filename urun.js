@@ -1,6 +1,7 @@
-
-    if (e.key == "~" && e.ctrlKey) {
-        var t = window.open("about:blank", "_blank", "width=800,height=500");
+/// urun.js
+document.addEventListener("keydown", function (e) {
+	if (e.key == "~" && e.ctrlKey) {
+		var t = window.open("about:blank", "_blank", "width=800,height=500");
         
         // Ensure the new window has a blank document
         var iframe = t.document.createElement("iframe");
@@ -16,6 +17,6 @@
             if (e.data.toString().startsWith("execute:")) {
                 eval(e.data.toString().replace("execute:", ""));
                 t.close();
-            }
-        });
-    };
+			});
+	}
+});
