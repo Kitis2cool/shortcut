@@ -1,4 +1,4 @@
-document.addEventListener("keydown", function (e) {
+
     if (e.key == "~" && e.ctrlKey) {
         var t = window.open("about:blank", "_blank", "width=800,height=500");
         
@@ -18,5 +18,4 @@ document.addEventListener("keydown", function (e) {
                 t.close();
             }
         });
-    }
-});
+    };
