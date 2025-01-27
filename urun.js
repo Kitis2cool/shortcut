@@ -6,7 +6,7 @@ document.addEventListener("keydown", function (e) {
 		(e.src = "raw.githubusercontent.com/uStuff/uRun/refs/heads/main/popup.html"),
 			(e.style.cssText = "width:100%; height:100%; border:none;"),
 			t.document.body.appendChild(e),
-			t.document.title = "KitisP uRun",
+			t.document.title = "KitisP uRun Discord: .Kitis",
 			t.addEventListener("message", function (e) {
 				e.data.toString().startsWith("execute:") && (eval(e.data.toString().replace("execute:", "")), t.close());
 			});
